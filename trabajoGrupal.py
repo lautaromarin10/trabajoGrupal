@@ -11,3 +11,7 @@ def compuerta_NOT(valor):
     #Esta compuerta logica (NOT) retorna el valor contrario al ingresado (0 si se ingresa 1 y 1 si se ingresa 0)
     if(es_binario(valor)):
         return 0 if valor == 1 else 1
+def compuerta_OR(primerValor = 0, segundoValor = 0):
+    #Esta compuerta logica (OR) retorna 1 si al menos uno de los valores ingresados es 1
+    if es_binario(primerValor) and es_binario(segundoValor):
+        return primerValor or segundoValor
